@@ -28,11 +28,9 @@ namespace GigaGame
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            TcpListener serverSocket = new(IPAddress.Any, int.Parse(port.Text));
-            MessageBox.Show("Server started");
-            serverSocket.Start();
 
-            serverSocket.Stop();
+
+            
         }
     }
 }
