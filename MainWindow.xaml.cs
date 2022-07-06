@@ -15,9 +15,9 @@ using System.Windows.Shapes;
 
 namespace GigaGame
 {
-
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -25,21 +25,13 @@ namespace GigaGame
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Client client = new Client();
-            client.Connect(ip.Text.ToString());
-
             string mess = nik.Text.ToString();
             byte[] data = Encoding.Unicode.GetBytes(mess);
-            client.stream.Write(data, 0, data.Length);
+            App.client.stream.Write(data, 0, data.Length);
 
             var win = new Lobby();
             win.Show();
             this.Close();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -28,5 +28,41 @@ namespace GigaGame
         {
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //Отправка сообщения о необходимости никнеймов
+            byte[] nikNeed = Encoding.Unicode.GetBytes("1001");
+            App.client.stream.Write(nikNeed, 0, nikNeed.Length);
+            nikNeed = null;
+
+            //Принятие никнеймов
+            StringBuilder builder = new();
+            byte[] data = new byte[1024];
+            int bytes = 0;
+            do
+            {
+                bytes = App.client.stream.Read(data, 0, data.Length);
+                builder.Append(Encoding.Unicode.GetString(data, 0, bytes));
+
+            } while (App.client.stream.DataAvailable);
+
+            listOfPlayers.Items.Clear();
+            string players = builder.ToString();
+            string buffString = "";
+            for (int i = 0; i < players.Length; i++)
+            {
+                if (players[i] != '\n')
+                {
+                    buffString += players[i];
+                } 
+                else
+                {
+                    listOfPlayers.Items.Add(buffString);
+                    buffString = "";
+                }
+                
+            }
+        }
     }
 }

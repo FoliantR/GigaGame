@@ -8,10 +8,8 @@ using System.Windows;
 
 namespace GigaGame
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
+        public static Client client = new("127.0.0.1");
     }
 }

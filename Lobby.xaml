@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GigaGame"
         mc:Ignorable="d"
-        Title="Лобби" Height="450" Width="183">
+        Title="Лобби" Height="572" Width="211">
     <Grid>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,33,10,111" Height="290" Width="163" Name="listOfPlayers"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,33,38,233" Height="290" Width="163" Name="listOfPlayers"/>
         <Label Content="Список игроков" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="33" Width="163" FontSize="16"/>
         <Button Content="Позвать на игру" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Height="91" Width="163" Click="Button_Click"/>
+        <Button Content="Обновить список игроков" HorizontalAlignment="Left" Height="85" Margin="10,443,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click_1"/>
     </Grid>
 </Window>

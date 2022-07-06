@@ -4,7 +4,6 @@ C:\Users\snowg\Desktop\GigaGame\GigaGame\bin\Debug\net6.0-windows\GigaGame.runti
 C:\Users\snowg\Desktop\GigaGame\GigaGame\bin\Debug\net6.0-windows\GigaGame.dll
 C:\Users\snowg\Desktop\GigaGame\GigaGame\bin\Debug\net6.0-windows\GigaGame.pdb
 C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\GigaGame.csproj.AssemblyReference.cache
-C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\CreateServer.g.cs
 C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\Game.g.cs
 C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\InvatationOnGame.g.cs
 C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\Lobby.g.cs
@@ -12,7 +11,6 @@ C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\MainWindow.g.c
 C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\GigaGame_MarkupCompile.cache
 C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\GigaGame_MarkupCompile.lref
-C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\CreateServer.baml
 C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\Game.baml
 C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\InvatationOnGame.baml
 C:\Users\snowg\Desktop\GigaGame\GigaGame\obj\Debug\net6.0-windows\Lobby.baml

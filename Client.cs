@@ -9,20 +9,19 @@ using System.Text.RegularExpressions;
 
 namespace GigaGame
 {
-    internal class Client
+    public class Client
     {
         TcpClient tcpClient = new();
         IPEndPoint IPEndPoint;
         public NetworkStream stream;
         public bool isConnected = false;
 
-        public int Connect(string ip)
+        public Client(string ip)
         {
             IPEndPoint = new IPEndPoint(IPAddress.Parse(ip), 8888);
             tcpClient.Connect(IPEndPoint);
             stream = tcpClient.GetStream();
             isConnected = true;
-            return 0;
         }
 
         public int Disconnect()
