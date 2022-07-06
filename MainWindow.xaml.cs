@@ -25,13 +25,15 @@ namespace GigaGame
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //Отправляем ник
             string mess = nik.Text.ToString();
             byte[] data = Encoding.Unicode.GetBytes(mess);
             App.client.stream.Write(data, 0, data.Length);
 
+            //Закрываем привествующие окно
             var win = new Lobby();
             win.Show();
-            this.Close();
+            Close();
         }
     }
 }

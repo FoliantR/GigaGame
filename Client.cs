@@ -11,10 +11,12 @@ namespace GigaGame
 {
     public class Client
     {
-        TcpClient tcpClient = new();
-        IPEndPoint IPEndPoint;
+        public TcpClient tcpClient = new();
+        public IPEndPoint IPEndPoint;
         public NetworkStream stream;
         public bool isConnected = false;
+
+        // Присоединение по айпи, который написан в App.cs с помощью конструктора 
 
         public Client(string ip)
         {
@@ -23,6 +25,16 @@ namespace GigaGame
             stream = tcpClient.GetStream();
             isConnected = true;
         }
+
+        // Присоедениение по ip
+
+        //public void Connect(string ip)
+        //{
+        //    IPEndPoint = new IPEndPoint(IPAddress.Parse(ip), 8888);
+        //    tcpClient.Connect(IPEndPoint);
+        //    stream = tcpClient.GetStream();
+        //    isConnected = true;
+        //}
 
         public int Disconnect()
         {

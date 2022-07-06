@@ -24,11 +24,13 @@ namespace GigaGame
             InitializeComponent();
         }
 
+        //Приглашение на игру
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
+        //Обновление списка игроков
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             //Отправка сообщения о необходимости никнеймов
@@ -36,7 +38,7 @@ namespace GigaGame
             App.client.stream.Write(nikNeed, 0, nikNeed.Length);
             nikNeed = null;
 
-            //Принятие никнеймов
+            //Принятие никнеймов и запись его в литсбокс
             StringBuilder builder = new();
             byte[] data = new byte[1024];
             int bytes = 0;
